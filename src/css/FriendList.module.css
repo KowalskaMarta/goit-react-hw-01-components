@@ -1,0 +1,36 @@
+.friend-list {
+
+}
+
+.name {
+    color: blue;
+}
+
+.item {
+
+}
+
+.avatar { 
+
+}
+
+.status {
+position: absolute;
+width: 15px;
+height: 15px;
+left: 15px;
+border-radius: 50%;
+background-color: green;
+}
+
+.status.on {
+    background-color: green;
+}
+
+.status.off {
+    background-color: red;
+}
+
+.on, .off {
+    border: 1px solid pink;
+}
