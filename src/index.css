@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -16,4 +17,11 @@ code {
 
 ul {
   list-style: none;
+}
+
+.cent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

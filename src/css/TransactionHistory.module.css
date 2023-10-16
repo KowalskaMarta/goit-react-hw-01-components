@@ -1,21 +1,31 @@
 table {
-
+    border-collapse: collapse;
+    
 }
 
 thead tr {
-
-}
-
-table th {
     background-color: #524a4d;
     color: #fff;
 }
 
-table td {
+table th {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+  text-align: left;
+}
 
+table td {
+    padding: 8px;
 }
 
 table tr {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
 
+table tr:nth-child(even) {
+    background-color: #ddd;
+    border-bottom: 1px solid #ccc;
 }
 

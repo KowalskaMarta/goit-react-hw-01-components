@@ -8,20 +8,20 @@ export const Statistics = ({ title, stats }) => {
 
       <ul className={css['stat-list']}>
         <li className={css.item}>
-          <span className={css.label}>.docx</span>
-          <span className={css.percentage}>4%</span>
+          <span className={css.label}>{stats[0].label}</span>
+          <span className={css.percentage}>{stats[0].percentage}%</span>
         </li>
         <li className={css.item}>
-          <span className={css.label}>.mp3</span>
-          <span className={css.percentage}>14%</span>
+          <span className={css.label}>{stats[1].label}</span>
+          <span className={css.percentage}>{stats[1].percentage}%</span>
         </li>
         <li className={css.item}>
-          <span className={css.label}>.pdf</span>
-          <span className={css.percentage}>41%</span>
+          <span className={css.label}>{stats[2].label}</span>
+          <span className={css.percentage}>{stats[2].percentage}%</span>
         </li>
         <li className={css.item}>
-          <span className={css.label}>.mp4</span>
-          <span className={css.percentage}>12%</span>
+          <span className={css.label}>{stats[3].label}</span>
+          <span className={css.percentage}>{stats[3].percentage}%</span>
         </li>
       </ul>
     </section>
@@ -29,6 +29,10 @@ export const Statistics = ({ title, stats }) => {
 };
 
 Statistics.propTypes = {
-    label: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
-  };
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+};
