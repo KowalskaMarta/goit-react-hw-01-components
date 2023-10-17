@@ -1,5 +1,7 @@
 table {
     border-collapse: collapse;
+    width: 350px;
+margin-top: 40px;
     
 }
 
@@ -9,7 +11,7 @@ thead tr {
 }
 
 table th {
-    background-color: blue;
+    background-color: #282828;
     color: #fff;
     padding: 8px;
   text-align: left;

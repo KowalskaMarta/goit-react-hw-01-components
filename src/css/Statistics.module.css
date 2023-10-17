@@ -5,6 +5,8 @@
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 8px;
+    width: 350px;
+    margin-bottom: 40px;
 }
 
 .title {
@@ -18,7 +20,7 @@
 
 .stat-list {
    padding: 0;
-   margin: 20px;
+   margin: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -26,15 +28,28 @@
 .item {
     display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+ 
+  display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 10;
+    
+    flex-direction: column;
+    width: 100%;
+    background-color: silver;
+    flex-basis: calc(100% / 4);
+    
 }
 
 .label {
     font-weight: bold;
     white-space: nowrap;
-    
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .percentage {
-    color: green;
+    color: #282828;
+    padding-bottom: 10px;
 }
